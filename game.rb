@@ -36,8 +36,6 @@ class Game
     end
   end
   
-  
-
   def generate_question
     Question.new
   end
@@ -57,7 +55,6 @@ class Game
       end
   end
   
-
 def display_winner
   winner = @players.max_by(&:score)
   loser_score = @players.min_by(&:score).score

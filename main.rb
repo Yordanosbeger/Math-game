@@ -23,8 +23,8 @@ alex = game.players[0]
 john = game.players[1]
 
 game.turn(alex)
- game.turn(john)
-# Find the winner after the game loops
+game.turn(john)
+
 winner = [one, two, three, four].max_by { |game| game.winner.score }
 puts "#{winner.winner.name} wins with a score of #{winner.winner.score}/3!"
 puts '------new turn-------'
